@@ -19,6 +19,37 @@ client.on('message', msg => {
 
 
 
+client.on('message', message => {
+     if(!message.channel.guild) return;
+var prefix = "!";
+                if(message.content.startsWith(prefix + 'allbots')) {
+
+    
+    if (message.author.bot) return;
+    let i = 1;
+        const botssize = message.guild.members.filter(m=>m.user.bot).map(m=>`${i++} - <@${m.id}>`);
+          const embed = new Discord.RichEmbed()
+          .setAuthor(message.author.tag, message.author.avatarURL)
+          .setDescription(`**Found ${message.guild.members.filter(m=>m.user.bot).size} bots in this Server**
+${botssize.join('\n')}`)
+.setFooter(client.user.username, client.user.avatarURL)
+.setTimestamp();
+message.channel.send(embed)
+
+}
+
+
+});
+
+
+
+
+
+
+
+
+
+
 
 
 client.on('message', message => {
@@ -29,7 +60,7 @@ let embed = new Discord.RichEmbed()
 .addField(' الاعضاء👥 ',` [${client.users.size}] `)
 .addField('الرومات📚 ',`[${client.channels.size}]`) 
 .addField(' البنق🚀 ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField('مصمم  + صاحب البوت ',`اسمك هنا`)
+.addField('سعد  + saad ',`اسعد`)
 .setColor('#7d2dbe')
 message.channel.sendEmbed(embed);
 }
