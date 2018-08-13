@@ -22,16 +22,6 @@ client.on('message', msg => {
 
 
 
-client.on('message', message => {
-            if (message.content.startsWith(prefix ! "جديد")) {
-     let embed = new Discord.RichEmbed()
-.setThumbnail(message.author.avatarURL)
-.addField('     **هنا اكتب الامر** ' ,' **هنا اكتب وش يسوي الامر** ')
-.setColor('#7d2dbe')
-  message.channel.sendEmbed(embed);
-    }
-});
-
 
 
 
