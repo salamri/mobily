@@ -268,6 +268,33 @@ client.on('message', function(message) {
 
 
 
+client.on("message", message => { //help
+          if(!message.channel.guild) return;
+   if(message.author.bot) return;
+      if(message.content === prefix + "help"){ 
+          const embed = new Discord.RichEmbed()
+      .setTimestamp()
+      .setColor("#5016f3")
+      .setThumbnail(client.user.avatarURL)
+      .setDescription(` 
+      ***__music orders__***
+     
+    『${prefix}play / لتشغيل أغنية برآبط أو بأسم』
+    『${prefix}skip / لتجآوز الأغنية الحآلية』
+    『${prefix}pause / إيقآف الأغنية مؤقتا』
+    『${prefix}unpause / لموآصلة الإغنية بعد إيقآفهآ مؤقتا』
+    『${prefix}vol / لتغيير درجة الصوت 10 - 0』
+    『${prefix}stop / لإخرآج البوت من الروم』
+      `)
+
+ message.channel.send({embed});
+
+}
+});
+
+
+
+
 
 
 client.login(process.env.BOT_TOKEN);
