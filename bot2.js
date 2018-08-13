@@ -18,11 +18,7 @@ client.on('message', msg => {
 
 
 
-client.on('message', message => {
-    if(message.conent.includes('رابط')) {
-        message.reply('https://discord.gg/TnW4DG');
-    }
-});
+
 
 
 
