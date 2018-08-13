@@ -16,17 +16,20 @@ client.on('message', msg => {
 
 
 
-  if(command === "say") {
-    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-    // To get the "message" itself we join the `args` back into a string with spaces: 
-    const sayMessage = args.join(" ");
-    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
-    message.delete().catch(O_o=>{}); 
-    // And we get the bot to say the thing: 
-    message.channel.send(sayMessage);
-  }
+  if(command === "ban") {
+    // Most of this command is identical to kick, except that here we'll only let admins do it.
+    // In the real world mods could ban too, but this is just an example, right? ;)
+    if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
+      return message.reply("Sorry, you don't have permissions to use this!");
+    
+    let member = message.mentions.members.first();
+    if(!member)
+      return message.reply("Please mention a valid member of this server");
+    if(!member.bannable) 
+      return message.reply("I cannot ban this user! Do they have a higher role? Do I have ban permissions?");
 
-
+    let reason = args.slice(1).join(' ');
+    if(!reason) reason = "No reason provided";
 
 
 
