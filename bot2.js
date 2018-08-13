@@ -14,11 +14,10 @@ client.on('message', msg => {
 
 
 
-
 ```
 client.on('message', message => {
     var args = message.content.split(/[ ]+/)
-    if(message.content.includes('امك')){
+    if(message.content.includes('السبة')){
         message.delete()
       message.channel.sendMessage("", {embed: {
         title: "لا تسب",
@@ -32,8 +31,6 @@ client.on('message', message => {
 
      
 }); 
-
-
 
 
 
