@@ -19,7 +19,7 @@ client.on('message', msg => {
 
 
 client.on("message", message => {
-    const prefix = "!"
+    const prefix = "W"
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
