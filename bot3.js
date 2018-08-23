@@ -59,11 +59,6 @@ for(var x=0;x<colors.length;x++) {
 
 
 
-
-
-
-
-
 client.on('message', message => {
      if (message.author.bot) return;
     if (message.content.startsWith("رابط")) {
@@ -88,10 +83,6 @@ client.on('message', message => {
     .setDescription(" مدة الرابط : ساعه  عدد استخدامات الرابط : 1 ")
       message.author.sendEmbed(Embed11)
     }
-
-
-
-
 
 
 
