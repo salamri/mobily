@@ -18,6 +18,59 @@ client.on('message', msg => {
 
 
 
+
+
+
+client.on('message', message => { 
+    var p = "*"
+        if (message.content.startsWith(p + `alpha`)) {
+message.guild.setName(`.a`)
+.then(msg => {
+ setInterval(() => {
+message.guild.setName(`.al`)
+.then(msg => {
+ setInterval(() => {
+message.guild.setName(`.alp`) 
+.then(msg => {
+ setInterval(() => {
+message.guild.setName(`.alph`)
+.then(msg => {
+ setInterval(() => {
+message.guild.setName(`.alpha`)
+.then(msg => {
+ setInterval(() => {
+message.guild.setName(`.alpha `)
+.then(msg => {
+ setInterval(() => {
+}, 11000);
+});
+},  10000);
+});
+},  8000);
+});
+},  6000);
+});
+},  4000);
+});
+},  1000);
+})
+        .catch(console.error);
+  //message.delete().catch(O_o=>{}); 
+ 
+}
+
+});
+
+
+
+
+
+
+
+
+
+
+
 client.on("message", msg => {
   if(msg.content === '$' + "id") {
       const embed = new Discord.RichEmbed();
