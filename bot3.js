@@ -7,11 +7,11 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '$$';
+const prefix = 'c';
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`$$play`,"https://www.twitch.tv/Anime & Games")
+client.user.setGame(`cplay`,"https://www.twitch.tv/Anime & Games")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -291,26 +291,7 @@ client.on("message", message => { //help
 
 
 
-client.on('message', message => {
-    if(!message.channel.guild) return;
-if (message.content.startsWith('$$ping')) {
-if(!message.channel.guild) return;
-var msg = `${Date.now() - message.createdTimestamp}`
-var api = `${Math.round(client.ping)}`
-if (message.author.bot) return;
-let embed = new Discord.RichEmbed()
-.setAuthor(message.author.username,message.author.avatarURL)
-.setColor('RANDOM')
-.addField('**Time Taken:**',msg + " ms 📶 ")
-.addField('**WebSocket:**',api + " ms 📶 ")
-message.channel.send({embed:embed});
-}
-});
 
 
 
-
-
-
-
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN3); 
