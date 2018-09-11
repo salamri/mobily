@@ -19,4 +19,4 @@ joined info-legends
 })
 
 
-client.login('NDg5MTA4NzUzNjI3NjExMTQ3.Dnl9mA.BUvQtahIyaeQR17LlrM79EIgD1g');
+client.login('BOT_TOKEN5');
