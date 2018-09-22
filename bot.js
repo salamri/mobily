@@ -206,5 +206,17 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
+
+
+const prefix = "x" //برفكس بوتك
+
+client.on("messageCreate", (message) => {
+    if(message.content === prefix + "ping") {
+        client.createMessage(message.channel.id, `Pong!
+My ping is : ${Date.now() - initTime} ms`);
+
+    }});
+
+
  
  client.login(process.env.BOT_TOKEN);
