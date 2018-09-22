@@ -208,14 +208,7 @@ function isYoutube(str) {
     });
 
 
-const prefix = "x" //برفكس بوتك
 
-client.on("messageCreate", (message) => {
-    if(message.content === prefix + "ping") {
-        client.createMessage(message.channel.id, `Pong!
-My ping is : ${Date.now() - initTime} ms`);
-
-    }});
 
 
  
