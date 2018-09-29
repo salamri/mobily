@@ -7,13 +7,13 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
  
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = 'X';
+const prefix = 'x';
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
  
       client.on('ready', () => {
-              client.user.setActivity("Xplay | .Fun", {type: 'LISTENING'});
+              client.user.setActivity("xplay | .Fun", {type: 'LISTENING'});
      
       });
 /*
@@ -207,4 +207,4 @@ function isYoutube(str) {
      }
     });
  
- client.login(process.env.BOT_TOKEN2);
+ client.login(process.env.BOT_TOKEN);
