@@ -13,7 +13,7 @@ client.on('ready', function() {
 });
  
       client.on('ready', () => {
-              client.user.setActivity("xplay | .Fun", {type: 'SAAD'});
+              client.user.setActivity("xplay | saad", {type: 'LISTENING'});
      
       });
 /*
