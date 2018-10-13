@@ -8,7 +8,6 @@ console.log("Welcome Again !");
   return channel.send(` 
 **
  تعال اخطفك بحضني
-
 https://discord.gg/Nc2jUeN
 joined info-legends
 ! legends.                              
@@ -17,4 +16,5 @@ joined info-legends
 }).catch(console.error)
 
 })
+
 client.login(process.env.BOT_TOKEN6);
