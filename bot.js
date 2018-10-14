@@ -207,5 +207,14 @@ function isYoutube(str) {
      }
     });
  
+
+client.on('ebnklb',function(ebnklb) {
+    
+    if(ebnklb.content.startsWith("<@𓆩SAAD𓆪|Bot♪#6474>")) {
+        ebnklb.channel.send('Hey Im **𓆩SAAD𓆪|Bot♪!**  A Nice Bot Developed By:`اسمك`')
+        ebnklb.channel.send('My Prefix `X`')
+
+    }
+});
  
  client.login(process.env.BOT_TOKEN);
