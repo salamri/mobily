@@ -2,9 +2,6 @@ const Discord = require('discord.js');
 const client1 = new Discord.Client();
 const client2 = new Discord.Client();
 
-token1 = ""
-token2 = ""
-
 client1.on('ready', () => {
   console.log(`Logged in as  * [ " BC " ] servers! [ " ${client1.guilds.size} " ]`);
   });
