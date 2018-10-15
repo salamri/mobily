@@ -13,7 +13,7 @@ client.on('message', msg => {
 
 const var Discord client.on('ready',async () => {
   let GUILDID = '453341584151412740'; // اي دي السيرفر
-  let CHANNELID = '501106309882707975'; // اي دي الروم
+  let CHANNELID = '453419319506763777'; // اي دي الروم
   voiceStay(GUILDID, CHANNELID);
   function voiceStay(guildid, channelid) {
     if(!guildid) throw new Error('Syntax: voiceStay function requires guildid');
