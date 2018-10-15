@@ -70,7 +70,7 @@ if (message.content.startsWith(prefix + 'mypoints')) {
 
 
              })
-        }
+      
 });
 client.on("message", function(message) {
    if(message.content.startsWith(prefix + "rps")) {
