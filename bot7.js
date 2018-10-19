@@ -13,7 +13,7 @@ client.on('ready', function() {
 });
  
       client.on('ready', () => {
-              client.user.setActivity("+play | saad", {type: 'LISTENING'});
+              client.user.setActivity("+play | zoz", {type: 'LISTENING'});
      
       });
 /*
