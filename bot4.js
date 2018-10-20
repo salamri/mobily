@@ -8,7 +8,7 @@ console.log("Welcome Again !");
   return channel.send(` 
 **
  تعال اخطفك بحضني
-https://discord.gg/Nc2jUeN
+https://discord.gg/Zad9MuF
 joined info-legends
 ! legends.                              
 الدعووة خاصة لك ي قلبي ... [ ${member}  ]
