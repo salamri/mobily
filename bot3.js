@@ -1,23 +1,21 @@
-const var Discord
- const Discord = require('discord.js');
-const SA3D = new Discord.Client();
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-console.log("BOT ONLINE");
+console.log("Welcome Again !");
  
-A7MD.on("guildMemberAdd", member => {
+ client.on("guildMemberRemove", member => {
   member.createDM().then(function (channel) {
-  return channel.send(**
-سالخخير ي جميل .
-ودي اعزمك على سيرفري , اذا ممكن تلبي الدعوة ي بعد قلبي ؟
-مكآن راقي يليق بمقامك .
-                               [  https://discord.gg/3PnZK7S ] 
-حياك ي بعد قلبي وكلي ... [ ${member}  ]
-**) 
+  return channel.send(` 
+**
+ تعال اخطفك بحضني
+https://discord.gg/3PnZK7S
+joined info-legends
+! legends.                              
+الدعووة خاصة لك ي قلبي ... [ ${member}  ]
+**`)
 }).catch(console.error)
+
 })
-
-
-
 
 
  client.login(process.env.BOT_TOKEN3);
