@@ -8,14 +8,14 @@ console.log("Welcome Again !");
   return channel.send(` 
 **
  تعال اخطفك بحضني
-https://discord.gg/3PnZK7S
+
+https://discord.gg/Nc2jUeN
 joined info-legends
-! legends.                              
+! regslity.                              
 الدعووة خاصة لك ي قلبي ... [ ${member}  ]
 **`)
 }).catch(console.error)
 
 })
-
 
  client.login(process.env.BOT_TOKEN3);
