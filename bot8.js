@@ -18,4 +18,4 @@ joined info-legends
 
 })
 
- client.login(process.env.BOT_TOKEN6);
+ client.login(process.env.BOT_TOKEN8);
