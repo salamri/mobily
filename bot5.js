@@ -9,7 +9,7 @@ console.log("Welcome Again !");
 **
  تعال اخطفك بحضني
 
-https://discord.gg/UjCGsG8
+https://discord.gg/QFSd2Cx
 joined info-legends
 ! regslity.                              
 الدعووة خاصة لك ي قلبي ... [ ${member}  ]
