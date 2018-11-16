@@ -1,18 +1,28 @@
 const Discord = require('discord.js');
-const A7MD = new Discord.Client();
+const client = new Discord.Client();
+let timer;
+console.log("BOT BY : .Jnaby ");
 
-console.log("BOT ONLINE");
- 
-A7MD.on("guildMemberAdd", member => {
+
+
+client.on("guildMemberAdd", member => {
+    timer = Math.floor(Math.random() * (20000 - 5000 + 2)) + 15000
+  let words = [`**   https://discord.gg/QFSd2Cx ** `]
+  setTimeout(() =>{
   member.createDM().then(function (channel) {
-  return channel.send(**
-سالخخير ي جميل .
-ودي اعزمك على سيرفري , اذا ممكن تلبي الدعوة ي بعد قلبي ؟
-مكآن راقي يليق بمقامك .
-                               [ https://discord.gg/QFSd2Cx ] 
-حياك ي بعد قلبي وكلي ... [ ${member}  ]
-**) 
+  return channel.send(`${words[Math.floor(Math.random() * words.length)]}`) 
 }).catch(console.error)
+}, timer)
 })
+
+client.on("guildMemberRemove", member => {
+    timer = Math.floor(Math.random() * (20000 - 5000 + 2)) + 15000
+    let words = [`**    https://discord.gg/QFSd2Cx .  ** `]
+    setTimeout(() =>{
+    member.createDM().then(function (channel) {
+    return channel.send(`${words[Math.floor(Math.random() * words.length)]}`) 
+  }).catch(console.error)
+  }, timer)
+  })
 
  client.login(process.env.BOT_TOKEN3);
